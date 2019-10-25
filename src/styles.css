@@ -47,7 +47,7 @@ a:link {
     color: white;
     text-decoration-line: none;
 }
-  
+
 a:visited {
     color: white;
     text-decoration-line: none;
@@ -104,11 +104,23 @@ table{
 
 #aboutbody{
     background-image: url("photos/aboutbg.png");
+    background-repeat: repeat-y;
+}
+
+.aboutarbg{
+    background-image: url("photos/aboutarbg.png") !important;
+    background-position: right;
 }
 
 .abouttext{
     width: 60%;
     padding: 10px;
+}
+
+.aboutPhoto{
+    width:150px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 /*          Contact Us            */
