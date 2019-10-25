@@ -191,3 +191,12 @@ ul.contactus{
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
 }
+
+/*          Search            */
+
+#dashboardbody{
+    background-image: url("photos/dashboardbg.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
