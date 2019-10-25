@@ -110,3 +110,30 @@ table{
     width: 60%;
     padding: 10px;
 }
+
+/*          Contact Us            */
+
+#contactbody{
+    background-image: url("photos/contactbg.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#contactus{
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.301);
+    margin: 20px;
+    padding: 7px;
+    border-radius: 25px;
+    height: 90%;
+}
+
+h1.contactus{
+    text-align: center;
+    color: #14255a;
+}
+
+ul.contactus{
+    font-size: 20px;
+}
