@@ -129,7 +129,7 @@ table{
     background-image: url("photos/contactbg.png");
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-size: auto; /* Resize the background image to cover the entire container */
 }
 
 #contactus{
@@ -148,4 +148,14 @@ h1.contactus{
 
 ul.contactus{
     font-size: 20px;
+}
+
+/*          Hospital Sign in            */
+
+#signinbody{
+    background-image: url("photos/signinbg.png");
+    height: 100%;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
