@@ -158,3 +158,27 @@ ul.contactus{
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
 }
+
+.signintext{
+  color: #14255a;
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0.301);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+#signinform{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  margin-left: -170px;
+  margin-top: -30px;
+}
+
+#login{
+  font-size: 30px;
+  margin: 20px;
+  margin-left: 120px;
+  margin-right: 78px;
+  padding: 5px;
+}
