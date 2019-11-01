@@ -192,11 +192,57 @@ ul.contactus{
     background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-/*          Search            */
+/*          Dashboard            */
 
 #dashboardbody{
     background-image: url("photos/dashboardbg.png");
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+
+#numberOfBeds{
+  position: absolute;
+  left: 45%;
+  top:20%;
+  margin-left: -170px;
+  margin-top: -30px;
+  color: #14255a;
+  font-size: 30px;
+}
+
+#okDashboard{
+  font-size: 30px;
+  margin-left: 120px;
+  margin-right: 78px;
+  padding: 5px;
+}
+
+#dashboardMessage{
+  position: absolute;
+  left: 45%;
+  top:30%;
+  margin-left: -170px;
+  margin-top: -30px;
+  color: #14255a;
+  font-size: 30px;
+}
+
+#ardashboardMessage{
+  position: absolute;
+  right: 30%;
+  top:30%;
+  margin-left: -170px;
+  margin-top: -30px;
+  color: #14255a;
+  font-size: 30px;
+}
+
+#logout{
+  background-color: rgba(20, 37, 90, 0.301);
+  margin: 20px;
+  padding: 7px;
+  display: inline-block;
+  border-radius: 10px;
 }

@@ -1,3 +1,14 @@
+<?php
+session_start();
+if(isset($_GET["action"])){
+  unset($_SESSION["username"]);
+  unset($_SESSION["key"]);
+}
+if(isset($_SESSION["username"])){
+  header("Location: /bedsdashboard.php");
+  exit;
+}
+ ?>
 <html>
   <head>
     <meta charset="utf-8">
@@ -5,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body id="signinbody">
-    <form id="signinform">
+    <form id="signinform" action="/bedsdashboard.php" method="post">
       <div class="signintext">
         Username:
         <input type="text" name="username" value="">
