@@ -37,7 +37,6 @@
           <th>Hospital Name</th>
           <th>Hospital Address</th>
           <th>Number of available beds</th>
-          <th>Reserve</th>
         </tr>
       </tbody>
       </table>
