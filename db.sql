@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 01, 2019 at 08:54 PM
+-- Generation Time: Nov 01, 2019 at 08:59 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.10
 
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `icutap`
 --
+CREATE DATABASE IF NOT EXISTS `icutap` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `icutap`;
 
 -- --------------------------------------------------------
 
@@ -28,13 +30,15 @@ SET time_zone = "+00:00";
 -- Table structure for table `details`
 --
 
-CREATE TABLE `details` (
+DROP TABLE IF EXISTS `details`;
+CREATE TABLE IF NOT EXISTS `details` (
   `id` int(11) NOT NULL,
   `hos_name` text NOT NULL,
   `address` text NOT NULL,
   `longitude` double NOT NULL,
   `latitude` double NOT NULL,
-  `beds` int(11) NOT NULL
+  `beds` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -52,10 +56,12 @@ INSERT INTO `details` (`id`, `hos_name`, `address`, `longitude`, `latitude`, `be
 -- Table structure for table `users`
 --
 
-CREATE TABLE `users` (
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL,
   `user` text NOT NULL,
-  `password` text NOT NULL
+  `password` text NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -66,22 +72,6 @@ INSERT INTO `users` (`id`, `user`, `password`) VALUES
 (1, 'darelfoaad', '03982c043b54d09e3764ef11ec68b9b06bd7f26b'),
 (2, 'tabarak', '6d0b600f1d074e1eaed5a2d1aba19240a9315f7e'),
 (3, 'newcairo', 'bdcb178981e2779c99ca07632c18ba016b9f023d');
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `details`
---
-ALTER TABLE `details`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `users`
---
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
